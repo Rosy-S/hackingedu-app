@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template
 from jinja2 import StrictUndefined
 
@@ -8,7 +7,6 @@ app.secret_key = "MuchSecretWow"
 
 @app.route('/')
 def index(): 
-	print "hey rosy did this work?"
 	return render_template('index.html')
 
 if __name__ == "__main__": 
