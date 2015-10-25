@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
@@ -16,26 +17,18 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
-
-    <title>hackingeduapp.club</title>
-
-    <!-- Bootstrap Core CSS -->
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="static/css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/font/font-awesome/css/font-awesome.min.css">
-
+    <title>hackingeduapp.club</title>
 </head>
 <style type="text/css">
 .panel-wrapper {
   color: #029DAE;
   border-color: #029DAE;}
 
-
 .sidebar-brand {
     color: #029DAE;
-    color: #333333;}
 
 .Donutlegend li span{
     display: inline-block;
@@ -44,38 +37,24 @@
     margin-right: 5px;
 
 }
-tr {
-  width: 300px;
-  height: 100px;
-  padding: 20px;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
-  margin: -70px 0 0 -170px;
-    color: #029DAE;
+html, body { 
+    font-family: 'Jura', sans-serif; 
 }
 
-html, body { font-family: 'Jura', sans-serif; }
-
-  </style>
+</style>
 
 <body>
-
     <div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="#" style="color:#602C92">
+                    <a href="#" style="color:#FCAC19">
                         Welcome to StudyTracker
                     </a>
                 </li>
-                <li>
-                    <a href="#" style="color:#FCAC19">StudyTracker Dashboard</a>
-                </li><br>
                 <li>
                     <a href="/add_event" style="color:#FCAC19">Track an Event</a>
                 </li><br>
@@ -88,8 +67,7 @@ html, body { font-family: 'Jura', sans-serif; }
                 <li>
                     <a href="#" style="color:#FCAC19">Send StudyTracker Text Alerts</a>
                 </li><br>
-                <li>
-                    <a href="#" style="color:#FCAC19">Redeem Points</a>
+                <li><a href="#" style="color:#FCAC19">Redeem Points</a>
                 </li><br>
                 <li>
                     <a href="/logout" style="color:#FCAC19">Logout</a>
@@ -135,9 +113,6 @@ html, body { font-family: 'Jura', sans-serif; }
                 </div>
             </div> 
         </div>
-
-
-
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -152,6 +127,7 @@ html, body { font-family: 'Jura', sans-serif; }
                         <div class="melon-class" style="width:70%; margin-left:auto; margin-right:auto">
                             <canvas id="donutChart" style="width:400px"></canvas>
                             <div id="donutLegend" class="Donutlegend"></div>
+                        </div>                   
                         </div>
                     <div class="col-lg-12">
         
@@ -197,4 +173,3 @@ html, body { font-family: 'Jura', sans-serif; }
 </body>
 
 </html>
-
