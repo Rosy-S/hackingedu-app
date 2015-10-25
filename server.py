@@ -79,7 +79,7 @@ def redeem_points():
 	# 		}
 	# data = requests.get(url, params=payload)
 	# print data.
-	return render_template("index.html")
+	return render_template("redeem_points.html")
 
 @app.route('/register', methods=['POST'])
 def process_registration():
