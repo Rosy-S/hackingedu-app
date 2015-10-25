@@ -27,7 +27,7 @@ class Session(db.Model):
 	study_id = db.Column(db.Integer, autoincrement=True, primary_key=True)
 	hours = db.Column(db.Integer)
 	subject_class = db.Column(db.String, db.ForeignKey('classes.subject'))
-	user_id = db.Column(db.String, db.ForeignKey('users.user_id'))
+	user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
 
 	def __rep__(self): 
 		return "<Session for Student ID %s" % (self.user_id)
@@ -43,7 +43,7 @@ def init_app():
 
 def connect_to_db(app):
 	# Configure to use our SQLite database
-	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://admin:POQDIFCTPTAEKFFF@aws-us-east-1-portal.5.dblayer.com:10928/compose'
+	app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://admin:POQDIFCTPTAEKFFF@aws-us-east-1-portal.5.dblayer.com:10928/hackingedu'
 	db.app = app
 	db.init_app(app)
 
